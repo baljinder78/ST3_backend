@@ -14,7 +14,7 @@
 	<name>ST3</name>
 	<description>St3 Backend project</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
