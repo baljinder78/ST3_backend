@@ -35,25 +35,10 @@ public class UserController {
         return "/html/signup";
     }
 
-    @RequestMapping("/dashboard")
-    public String usercheck(@RequestBody String data) throws JsonProcessingException {
-        System.out.println(data);
-        User user = new ObjectMapper().readValue(data, User.class);
-        System.out.println(user.toString());
-        if(userService.checkuser(user)) {
-            System.out.println("Userfound");
-            return "/html/Dashboard";
-        }
-        else
-        {
-            return "/html/Login";
-        }
-
-
+    @RequestMapping(value = "/dashboard")
+    public String dasboard(){
+        System.out.println("ru v");
+        return "/html/Dashboard";
     }
-//    public String dasboard(){
-//        System.out.println("ru v");
-//        return "redirect:/html/Dashboard";
-//    }
 
 }

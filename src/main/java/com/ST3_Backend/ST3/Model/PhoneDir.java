@@ -7,29 +7,30 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "UserDetails")
-public class UserDetails {
+@Table(name = "PhoneDir")
+public class PhoneDir {
 
     @Id
     @Column(name = "username",unique = true)
     public String Username;
 
+    @Column(name = "Name")
+    public String Name;
+
     @Column(name = "Email",unique = true)
     public String Email;
 
-    @Column(name = "Password")
-    public String Password;
-
     @Column(name = "Phone_no",unique = true)
-    public Integer Phone_number;
+    public String Phone_number;
 
-    public UserDetails() {
+    public PhoneDir() {
     }
 
-    public UserDetails(String username, String email, String password, Integer phone_number) {
+
+    public PhoneDir(String username, String name, String email, String phone_number) {
         Username = username;
+        Name = name;
         Email = email;
-        Password = password;
         Phone_number = phone_number;
     }
 
@@ -41,6 +42,14 @@ public class UserDetails {
         Username = username;
     }
 
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
     public String getEmail() {
         return Email;
     }
@@ -49,29 +58,21 @@ public class UserDetails {
         Email = email;
     }
 
-    public String getPassword() {
-        return Password;
-    }
-
-    public void setPassword(String password) {
-        Password = password;
-    }
-
-    public Integer getPhone_number() {
+    public String getPhone_number() {
         return Phone_number;
     }
 
-    public void setPhone_number(Integer phone_number) {
+    public void setPhone_number(String phone_number) {
         Phone_number = phone_number;
     }
 
     @Override
     public String toString() {
-        return "UserDetails{" +
+        return "PhoneDir{" +
                 "Username='" + Username + '\'' +
+                ", Name='" + Name + '\'' +
                 ", Email='" + Email + '\'' +
-                ", Password='" + Password + '\'' +
-                ", Phone_number=" + Phone_number +
+                ", Phone_number='" + Phone_number + '\'' +
                 '}';
     }
 }
