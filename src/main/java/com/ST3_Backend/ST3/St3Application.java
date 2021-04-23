@@ -1,0 +1,13 @@
+package com.ST3_Backend.ST3;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class St3Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(St3Application.class, args);
+	}
+
+}
