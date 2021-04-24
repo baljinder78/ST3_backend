@@ -10,12 +10,10 @@ function login()
             if(this.responseText==="false")
             {
                 alert("UserInvalid");
-                parent.setAttribute("action","#");
+                window.location="http://localhost:8080/Login"
+               return false
             }
-            else if(this.responseText==="true")
-            {
-                parent.setAttribute("action","/dashboard");
-            }
+
 
         }
     };
@@ -25,4 +23,3 @@ function login()
     };
     xhttp.send(JSON.stringify(data));
 }
-

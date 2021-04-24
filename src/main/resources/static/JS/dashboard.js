@@ -11,12 +11,9 @@ function addnumber()
                 if(this.responseText==="false")
                 {
                     alert("UserInvalid");
-                    parent.setAttribute("action","#");
+                    return false
                 }
-                else if(this.responseText==="true")
-                {
-                    parent.setAttribute("action","/dashboard");
-                }
+
 
             }
         };
