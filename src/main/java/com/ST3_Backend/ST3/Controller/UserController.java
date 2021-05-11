@@ -34,10 +34,9 @@ public class UserController {
 
         return "/html/signup";
     }
-
     @RequestMapping(value = "/dashboard")
     public String dasboard(){
-        System.out.println("ru v");
+        System.out.println("done");
         return "/html/Dashboard";
     }
 

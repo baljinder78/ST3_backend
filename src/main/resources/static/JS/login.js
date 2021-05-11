@@ -11,9 +11,20 @@ function login()
             {
                 alert("UserInvalid");
                 window.location="http://localhost:8080/Login"
+                localStorage.clear();
+                localStorage.setItem("user_name","hello");
+                console.log(localStorage.getItem("user_name"));
                return false
             }
+            else{
 
+                 parent.setAttribute("action","/dashboard");
+                  window.location="http://localhost:8080/dashboard"
+                localStorage.clear();
+                localStorage.setItem("user_name","hel");
+                console.log(localStorage.getItem("user_name"));
+
+                  }
 
         }
     };

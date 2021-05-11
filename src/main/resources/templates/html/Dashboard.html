@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="../Css/dashboard.css" rel="stylesheet">
+    <link href="../CSS/dashboard.css" rel="stylesheet">
     <script src="../JS/dashboard.js"> </script>
 </head>
-<body>
+<body onload="fun()">
 <h1>
     Fill details
 </h1>
 <div>
-    Name
-    <input type="text" id="name">
-    Email
-    <input type="email" id="email">
-    Phone Number
-    <input type="number" id="ph_no">
+    <form action="#" onsubmit="adddetail()">
+        Name
+        <input type="text" id="name">
+        Email
+        <input type="email" id="email">
+        Phone Number
+        <input type="number" id="ph_no">
 
-    <input type="submit" placeholder="submit">
+        <input type="submit" placeholder="submit">
+
+    </form>
 </div>
+<h1 id="try">
+</h1>
 
 </body>
 </html>

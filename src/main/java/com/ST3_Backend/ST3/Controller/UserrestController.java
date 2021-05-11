@@ -31,6 +31,7 @@ public class UserrestController {
         }
         else
         {
+            System.out.println("User not found");
             return "false";
         }
 
@@ -52,4 +53,6 @@ public class UserrestController {
 
 
     }
+
+
 }
