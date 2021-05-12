@@ -25,18 +25,18 @@ public class UserController {
 
     @RequestMapping("/login")
     public String login(){
-        return "/html/Login";
+        return "html/Login";
     }
 
     @RequestMapping("/sup")
     public String signup(){
 
-        return "/html/signup";
+        return "html/signup";
     }
     @RequestMapping(value = "/dashboard")
     public String dasboard(){
         System.out.println("done");
-        return "/html/Dashboard";
+        return "html/Dashboard";
     }
 
 }
