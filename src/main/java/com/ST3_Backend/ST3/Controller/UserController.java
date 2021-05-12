@@ -23,13 +23,12 @@ public class UserController {
         return "index";
     }
 
-    @RequestMapping("/Login")
+    @RequestMapping("/login")
     public String login(){
-
         return "/html/Login";
     }
 
-    @RequestMapping("/signup")
+    @RequestMapping("/sup")
     public String signup(){
 
         return "/html/signup";
